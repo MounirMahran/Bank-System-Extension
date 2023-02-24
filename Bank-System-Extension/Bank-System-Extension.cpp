@@ -944,11 +944,10 @@ void LoginScreen() {
 	string Username, Password;
 	Username = ReadInput::ReadString("Please enter username");
 	Password = ReadInput::ReadString("Please enter password");
-	stUser User;
 
-	if (IsUser(Username, User, vUsers))
+	if (IsUser(Username, CurrentUser, vUsers))
 	{
-		if (User.Password == Password) {
+		if (CurrentUser.Password == Password) {
 			BankSystem();
 		}
 		else {
