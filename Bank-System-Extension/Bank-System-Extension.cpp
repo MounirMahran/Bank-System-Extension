@@ -637,11 +637,10 @@ void AccessDeniedScreen() {
 }
 
 bool AccessGuranted(enPermissions Permission) {
-	if (Permission == enPermissions::All) return true;
+	if (CurrentUser.Permissions == enPermissions::All) return true;
 	else {
-		if ((Permission & CurrentUser.Permissions) == Permission) return true;
-		else return false;
-	}
+		if ((CurrentUser.Permissions & Permission) == Permission) return true; }
+	return false;
 }
 
 void MainMenuScreen() {
