@@ -19,10 +19,10 @@ The extension includes the following features:
 **Delete User:** Allows an administrator to delete an existing user from the system.  
 **Update User:** Allows an administrator to update an existing user's information.  
 **Find User:** Allows an administrator to search for a user.  
+**Main Menu:** Returns the user to the main menu.  
 
 ## Overall
 The bank system extension provides additional functionality to the original banking system, and can be used to manage users and enforce access controls in the system. The authentication system adds an extra layer of security to the system by requiring users to enter valid credentials before accessing the system. However, the program does not include any input validation or error handling, so invalid user input or file read errors may cause the program to crash.
 
 
 
-Main Menu: Returns the user to the main menu.
